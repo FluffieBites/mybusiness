@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Menu</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    🍪 Our Cookies Menu 🍪
+    <span id="cart-icon">🛒 (<span id="cart-count">0</span>)</span>
+</header>
+
+<div class="menu">
+    <div class="item">
+        <img src="mini-bites.jpg" alt="Mini Bites" class="product-img">
+        <h3>Mini Bites (20g)</h3>
+        <div class="price">RM 2</div>
+        <input type="number" value="1" min="1" class="qty">
+        <button class="add-cart" data-name="Mini Bites (20g)" data-price="2">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="max-bites.jpg" alt="Max Bites" class="product-img">
+        <h3>Max Bites (60g)</h3>
+        <div class="price">RM 5</div>
+        <input type="number" value="1" min="1" class="qty">
+        <button class="add-cart" data-name="Max Bites (60g)" data-price="5">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="lover-pack.jpg" alt="Lover Packs" class="product-img">
+        <h3>Lover Packs (2x)</h3>
+        <div class="price">RM 9</div>
+        <input type="number" value="1" min="1" class="qty">
+        <button class="add-cart" data-name="Lover Packs (2x)" data-price="9">Add to Cart</button>
+    </div>
+
+    <div class="item">
+        <img src="family-pack.jpg" alt="Family Pack" class="product-img">
+        <h3>Family Pack (5x)</h3>
+        <div class="price">RM 22</div>
+        <input type="number" value="1" min="1" class="qty">
+        <button class="add-cart" data-name="Family Pack (5x)" data-price="22">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Checkout Section (hidden at first) -->
+<div id="checkout-section" style="display:none;">
+    <h2>Checkout</h2>
+    <div id="checkout-details"></div>
+    <label>
+        <input type="radio" name="delivery" value="Postage" checked> Postage
+    </label>
+    <label>
+        <input type="radio" name="delivery" value="COD"> Cash on Delivery
+    </label>
+    <br><br>
+    <button id="confirm-order">Confirm Order</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

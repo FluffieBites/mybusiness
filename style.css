@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff7f0, #ffe9d6);
+    margin: 0;
+    padding: 0;
+	
+}
+header {
+    background: linear-gradient(90deg, #d4a373, #b07d58);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+.menu {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+.item {
+    margin-bottom: 25px;
+}
+.item h3 {
+    color: #d88b4a;
+    font-size: 22px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.item h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #f0b27a;
+    border-radius: 2px;
+}
+.price {
+    background: #f9e0c7;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+.price:hover {
+    background: #f5c89d;
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Product Image Styling */
+.product-img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    display: block;
+}
+
+#cart-icon {
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.qty {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.add-cart {
+    background: #d88b4a;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: #b8743a;
+}
+
+#checkout-section {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
